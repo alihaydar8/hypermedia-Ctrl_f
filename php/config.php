@@ -5,7 +5,6 @@
 	$dbname="hypermedia";
 	$Connect = mysqli_connect($servername, $username, $password, $dbname);
 	mysqli_set_charset( $Connect, 'utf8');
-	echo "hf";
 
 
 	function getContenuId($table,$id){ 
