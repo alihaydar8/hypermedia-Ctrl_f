@@ -1,0 +1,8 @@
+Un hypermédia est une extension de hypertexte à des données multimédias, qui ajoute aux informations de type texte autres médias comme des images, des sons, 
+des vidéos ou encore des données multimédia. Le terme hypermédia a été cité pour la première fois par Ted Nelson en 1965. 
+Il a, par la suite, été utilisé dans autres domaines, notamment par Chiel Kattenbelt pour désigner le théâtre.
+Grâce à ce procédé, toutes les formes informations sont reliées et permettent une navigation non linéaire et interactive dans un ensemble de données textuelles,
+iconographiques et sonores. Dans les applications basées sur le web informatique, information est présentée selon une approche hypermédia. 
+Il est également possible de lancer des applications web comme une messagerie web, des jeux en ligne ou des blogs, à partir de interface web. Dès lors, 
+il n'est pas surprenant de constater que beaucoup de travaux de recherches sur les hypermédias ont été réalisés ou sont en cours de développement, 
+comme la Chaire de recherche du Canada sur la littérature et les arts numériques et la Chaire de recherche sur les écritures numériques.

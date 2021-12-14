@@ -4,22 +4,24 @@ import mysql.connector
 
 def remplire_liste_dossier(liste_element):
     for filename in glob.glob('../fichier/*.txt'):
-        with open(os.path.join(os.getcwd(), filename), 'r') as f: 
+        with open(os.path.join(os.getcwd(), filename), 'r',encoding='utf-8') as f: 
             for line in f :
-                for element in line.split() :
-                    element = element.replace('.','')
-                    element = element.replace('!','')
-                    element = element.replace(':','')
-                    element = element.replace('(','')
-                    element = element.replace(')','')
-                    element = element.replace('?','')
-                    element = element.replace(',','')
-                    if(len(element)>2) :
-                        liste_element.append((element,filename,1))
+                for elementss in line.split() :
+                    for elements in elementss.split("’"):
+                        for element in elements.split("'"):
+                            element = element.replace('!','')
+                            element = element.replace(':','')
+                            element = element.replace('(','')
+                            element = element.replace(')','')
+                            element = element.replace('?','')
+                            element = element.replace(',','')
+                            if(len(element)>2) :
+                                liste_element.append((element,filename.replace("..",""),1))
             f.close()
 
-def remplire_liste_fichier(liste_vide,fichier_nom):
-    for line in fichier_nom:
+def remplire_liste_fichier(liste_vide,fichier_vide_nom):
+    fichier_vide = open(fichier_vide_nom, "r",encoding='utf-8')
+    for line in fichier_vide:
         for element_vide in line.split() :
             liste_vide.append(element_vide)
 
@@ -28,7 +30,6 @@ def filter_liste(liste_element,liste_vide):
         for element_vide in liste_vide :
             if element[0].lower() == element_vide :
                 liste_element.remove(element)
-                break
 
 def  display_liste(liste_element):
     for element in liste_element :
@@ -67,18 +68,16 @@ def main():
     liste_element = []
     liste_vide = []
     fichier_vide_nom ="../fichier/vide/fichier_vide.txt"
-    fichier_vide = open(fichier_vide_nom, "r")
     remplire_liste_dossier(liste_element)
-    remplire_liste_fichier(liste_vide,fichier_vide)
+    remplire_liste_fichier(liste_vide,fichier_vide_nom)
     filter_liste(liste_element,liste_vide)
     liste_element = occurrences_lsite(liste_element)
-    display_liste(liste_element)
+    display_liste(liste_vide)
     mydb = database_connection()
     database_liste(liste_element,mydb)
     # database_delete(mydb)
 
     mydb.close()
-    fichier_vide.close()
 
 
 if __name__ == '__main__' :

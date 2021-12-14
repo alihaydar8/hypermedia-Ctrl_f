@@ -1,0 +1,12 @@
+cette licence vise le double objectif de poursuita études et de formation professionnelle. 
+a issue de cette licence, les étudiants ont acquis les compétencea informaticiensa analystes-programmeurs et de développeurs, 
+et sont capablea utiliser les environnements de programmation pour apporter des solutions efficaces à des problèmes réels.
+approche générale de la licence esa aller de la pratique à la théorie et de la théorie à la pratique. 
+les étudiants doivent passer beaucoup de temps à tester sur machine les théories rencontrées et à étudier les principes rencontrés dans la pratique informatique.
+
+la formation a pour objectifs principaux de permettra acquisition des compétences techniques de base suivantes :
+
+réaliser la programmation de travaux informatiques travaux neufs et maintenance avec les outils mis à disposition,
+assurer les tests des programmes développés à partir des jeua essais,
+participer à la rédaction des dossiers techniques et des documentations des logiciels,
+rédiger des cahiers des charges et effectuer des analyses fonctionnelles.

@@ -1,0 +1,9 @@
+La recherche en plein texte (appelée aussi recherche en texte intégral ou recherche de texte libre) est une technique de recherche dans un document électronique ou une base de données textuelles, 
+qui consiste pour le moteur de recherche à examiner tous les mots de chaque document enregistré et à essayer de les faire correspondre à ceux fournis par utilisateur.
+Les techniques de recherche sont devenues fréquentes dans les bases de données bibliographiques en ligne dans les années 1970. 
+La plupart des sites Web et des programmes applicatifs (tels que les logiciels de traitement de texte) fournissent des fonctionnalités de recherche plein texte. 
+Des moteurs de recherche dans le Web, comme AltaVista, emploient des techniques de recherche plein texte, alors que autres indexent qu'une partie des pages Web examinées par son système indexation.
+approche la plus fréquente dans la recherche plein texte est de générer un index complet ou une concordance pour tous les documents pouvant être recherchés. 
+Pour chaque mot (sauf les mots-outils qui sont trop fréquents pour être utiles) on crée une entrée qui liste la position exacte de chaque occurrence du mot dans la base de données de documents. 
+Il est relativement simple de récupérer à aide une telle liste tous les documents qui correspondent à une requête, sans avoir à scanner chaque document. 
+Bien que pour des corpus de très petits documents la recherche plein texte puisse être faite par parcours séquentiel, indexation est la méthode préférée pour presque toutes les recherches plein texte.
