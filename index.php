@@ -35,7 +35,7 @@ if (isset($_GET['search']) and !empty($_GET['search'])) {
   if ($resultat->rowCount() > 0) { ?>
     <ul class="list-group">
       <?php while ($hay = $resultat->fetch()) { ?>
-        <li class="list-group-item"><?php echo "$hay[id]     $hay[nom]  $hay[fichier]  ($hay[occ]) " ?> <a href=<?php echo " $hay[fichier] "?>>Authentification</a> </li>
+        <li class="list-group-item"><?php echo "$hay[id]     $hay[nom]  $hay[fichier]  ($hay[occ]) " ?> <a href=<?php echo " $hay[fichier] "?>>voir le fichier</a> </li>
       <?php } ?>
     </ul>
   <?php } else { ?>

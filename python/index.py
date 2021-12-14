@@ -26,8 +26,8 @@ def remplire_liste_fichier(liste_vide,fichier_vide_nom):
             liste_vide.append(element_vide)
 
 def filter_liste(liste_element,liste_vide):
-    for element in liste_element:
-        for element_vide in liste_vide :
+    for element_vide in liste_vide :
+        for element in liste_element:
             if element[0].lower() == element_vide :
                 liste_element.remove(element)
 
@@ -74,6 +74,7 @@ def main():
     liste_element = occurrences_lsite(liste_element)
     display_liste(liste_vide)
     mydb = database_connection()
+    print(liste_vide)
     database_liste(liste_element,mydb)
     # database_delete(mydb)
 
