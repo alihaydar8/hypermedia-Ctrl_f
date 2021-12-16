@@ -1,13 +1,18 @@
-# hypermedia-Ctrl_f
+# Avant de lancer 
+### créer une base de donnée sur votre machine "hypermedia" ou changer les paramètres dans la fonction python/python.py/database_connection()
 
-# PYTHON 
-### travailler avec les liste 
-### manipulation des fichier 
-### connextion avec la base de donnee mysql
-### mysql -u hypermedia -p password hypermedia
-### select * fr_om cr_f;
-### delete from cr_f;
-# Web 
-### connextion avec la base de donnee avec php
-### designe css
-### MYSql requete
+# Comment lancer l'application 
+### python .\python\index.py
+### php -S localhost:5000
+
+# technologie utiliser 
+
+## PYTHON
+### connection base de donnée mysql
+### manipulation des fichier
+### manipulation des listes 
+### nettoyages des données / comparaison avec des mots vides 
+
+# PhP 
+### connextion base de donnée mysql
+### afichage des données avec redirection 

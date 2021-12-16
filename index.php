@@ -14,14 +14,14 @@ $bdd = new PDO('mysql:host=127.0.0.1;dbname=hypermedia;charset=utf8', 'hypermedi
 
 if (isset($_GET['search']) and !empty($_GET['search'])) {
   $search = htmlspecialchars($_GET['search']);
-  $resultat = $bdd->query('SELECT * FROM cr_f WHERE nom LIKE "%' . $search . '%" ORDER BY occ DESC');
+  $resultat = $bdd->query('SELECT * FROM search WHERE nom LIKE "%' . $search . '%" ORDER BY occ DESC');
 }
 ?>
 
 <body>
   <figure class="text-center">
     <blockquote class="blockquote">
-      <h1>My search Bar</h1>
+      <h1>Ali Haidar</h1>
     </blockquote>
   </figure>
   <div class="d-flex justify-content-center">
@@ -34,12 +34,14 @@ if (isset($_GET['search']) and !empty($_GET['search'])) {
   <?php
   if ($resultat->rowCount() > 0) { ?>
     <ul class="list-group">
-      <?php while ($hay = $resultat->fetch()) { ?>
-        <li class="list-group-item"><?php echo "$hay[id]     $hay[nom]  $hay[fichier]  ($hay[occ]) " ?> <a href=<?php echo " $hay[fichier] "?>>voir le fichier</a> </li>
+      <?php while ($res = $resultat->fetch()) { ?>
+        <li class="list-group-item"><?php echo " $res[nom]  $res[fichier]  ($res[occ]) " ?> <a href="fichier\<?php echo"$res[fichier] "?>">voir le fichier</a> </li>
       <?php } ?>
     </ul>
   <?php } else { ?>
-    Aucun résultat pour:
+    <ul class="list-group">
+        <li class="list-group-item"> Aucun résultat pour: </li>
+    </ul>
   <?php }
   ?>
 </body>
